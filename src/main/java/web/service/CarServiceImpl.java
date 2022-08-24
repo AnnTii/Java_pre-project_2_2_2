@@ -17,7 +17,6 @@ public class CarServiceImpl implements CarService {
         carList.add(new Car("FORD","White",500));
         carList.add(new Car("Kia","Blue",550));
         carList.add(new Car("Nissan","Yellow",600));
-
     }
 
     public List<Car> getCars(Integer num) {
@@ -26,6 +25,4 @@ public class CarServiceImpl implements CarService {
         }
         return carList.subList(0, num);
     }
-
-
 }

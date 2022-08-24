@@ -20,7 +20,7 @@ public class CarServiceImpl implements CarService {
     }
 
     public List<Car> getCars(Integer num) {
-        if (num == null || num < 1 || num > 5) {
+        if (num == null || num < 0 || num > 5) {
             num = 5;
         }
         return carList.subList(0, num);
